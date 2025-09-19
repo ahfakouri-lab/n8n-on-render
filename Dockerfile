@@ -1,10 +1,6 @@
-FROM n8nio/n8n
+FROM n8nio/n8n:latest
 
-# تنظیم پورت
-ENV N8N_PORT=5678
+# پورت پیش‌فرض n8n
 EXPOSE 5678
 
-# مسیر ذخیره دیتا
-VOLUME /home/node/.n8n
-
-CMD ["n8n", "start"]
+CMD ["n8n"]
